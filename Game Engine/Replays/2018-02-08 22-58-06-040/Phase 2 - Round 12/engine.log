@@ -1,0 +1,14 @@
+
+08-02-2018 23:04:07:873 - I: 	Added Command FireCrossShotCommand for Player Player 1
+08-02-2018 23:04:07:966 - I: 	Added Command FireSingleShotCommand for Player py3Bot
+08-02-2018 23:04:07:966 - D: 	Beginning round processing
+08-02-2018 23:04:07:996 - D: 	Processing Player Commands
+08-02-2018 23:04:08:040 - E: 	Failed to process command FireCrossShotCommand for player Player 1GameEngine.Exceptions.InvalidCommandException: The player does not have sufficient energy to use the selected weapon ---> Domain.Exceptions.InsufficientEnergyException: The player does not have sufficient energy to use the selected weapon
+   at Domain.Games.GameMap.Shoot(PlayerType player, List`1 targets, WeaponType weaponType) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\Domain\Games\GameMap.cs:line 97
+   at GameEngine.Commands.PlayerCommands.FireCrossShotCommand.PerformCommand(GameMap gameMap, BattleshipPlayer player) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Commands\PlayerCommands\FireCrossShotCommand.cs:line 35
+   --- End of inner exception stack trace ---
+   at GameEngine.Commands.PlayerCommands.FireCrossShotCommand.PerformCommand(GameMap gameMap, BattleshipPlayer player) in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Commands\PlayerCommands\FireCrossShotCommand.cs:line 74
+   at GameEngine.Engine.GameRoundProcessor.ProcessPlayerCommands() in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Engine\GameRoundProcessor.cs:line 213
+
+08-02-2018 23:04:08:097 - D: 	Killing off players who have no ships left
+08-02-2018 23:04:08:102 - D: 	Round processing complete
