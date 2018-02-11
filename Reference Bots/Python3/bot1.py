@@ -9,15 +9,13 @@ game_state_file = "state.json"
 output_path = '.'
 map_size = 0
 data_file = "data.txt"
-stack_file = "stack.txt"
 
 
 def main(player_key):
     #create initial file external
     with open(os.path.join("../..", data_file), 'w') as f:
-        f.write('{},{},{}'.format(0,0,"hunt"))
-    with open(os.path.join("../..", stack_file), 'w') as f:
-        f.write("")
+        f.write('{},{},{}'.format(0,0,0))
+
     global map_size
     # Retrieve current game state
     with open(os.path.join(output_path, game_state_file), 'r') as f_in:
@@ -33,78 +31,62 @@ def fire_shot(opponent_map):
     # To send through a command please pass through the following <code>,<x>,<y>
     # Possible codes: 1 - Fireshot, 0 - Do Nothing (please pass through coordinates if
     #  code 1 is your choice)
+    last_cell_x
+    last_cell_x
     with open(os.path.join("../..",data_file), 'r') as f:
         last_cell_x, last_cell_y, last_state = f_in.read().split(',')
         last_cell_x = int(last_cell_x)
         last_cell_y = int(last_cell_y)
 
-    #get last cell
-    last_cell
     for cell in opponent_map:
         if cell['X']==last_cell_x and cell['Y']==last_cell_y:
-            last_cell = cell
-            break
-
-    #load stack
-    stack = []
-    with open(os.path.join("../..", stack_file), 'r') as f:
-        for line in f_in:
-        x,y = line[:-1].split(',')
-        x = int(x)
-        y = int(y)
-        stack.append((x,y))
-
-    #handling if last state hit
-    if last_state=="hunt" and last_cell['Damaged']:
-        last_state="target"
-        for cell in opponent_map:
             if not cell['Damaged'] and not cell['Missed']:
-                if cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
-                if cell['X']==last_cell_x-1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
-                if cell['X']==last_cell_x and cell['Y']==last_cell_y+1:
-                    stack.append((cell['X'],cell['Y']))
-                if cell['X']==last_cell_x and cell['Y']==last_cell_y-1:
-                    stack.append((cell['X'],cell['Y']))
-    if last_state="target" and not last_cell['Damaged']:
-        for cell in opponent_map:
-            if not cell['Damaged'] and not cell['Missed']:
-                if cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
-                if cell['X']==last_cell_x-1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
-                if cell['X']==last_cell_x and cell['Y']==last_cell_y+1:
-                    stack.append((cell['X'],cell['Y']))
-                if cell['X']==last_cell_x and cell['Y']==last_cell_y-1:
-                    stack.append((cell['X'],cell['Y']))
+                break
+            
     
-    if stack==[]:
-        last_state = "hunt"
-
-    #hunt mode
-    if last_state=="hunt":
+    #last state tidak kena, tembak random dengan pola checkerboard 
+    if last_state==0:
         targets = []
         for cell in opponent_map:
             if not cell['Damaged'] and not cell['Missed']:
+                if (cell['X']+cell['Y'])%2==0:
                     valid_cell = cell['X'], cell['Y']
                     targets.append(valid_cell)
         target = choice(targets)
-        with open(os.path.join("../..",data_file), 'w') as f:
-            f.write("{},{},{}".format(target[0],target[1],"hunt"))
-        output_shot(*target)
-    #target mode
-    elif last_state=="target":
-        target = stack[0]
-        stack = stack[1:]
-        with open(os.path.join("../..",data_file), 'w') as f:
-            f.write("{},{},{}".format(target[0],target[1],"target"))
-        output_shot(*target)    
+    #last state kena
+    elif last_state==1:
+        cell_kiri
+        cell_atas
+        cell_kanan
 
-    #rewrite stack
-    with open(os.path.join("../..",stack_file), 'w') as f:
-        for s in stack:
-            f.write("{},{}\n".format(*s))
+        for cell in opponent_map:
+            if last_cell_x>0 and cell['X']==last_cell_x-1 and cell['Y']==last_cell_y:
+                cell_kiri = cell
+            elif last_cell_x<9 and cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
+                cell_kanan = cell
+            elif last_cell_x<9 and cell['X']==last_cell_x and cell['Y']==last_cell_y+1:
+                cell_atas = cell
+
+        if not cell_kiri['Damaged'] and not cell_kiri['Missed']:
+            valid_cell = cell_kiri['X'], cell_kiri['Y']
+        elif not cell_atas['Damaged'] and not cell_atas['Missed']:
+            valid_cell = cell_atas['X'], cell_atas['Y']
+        elif not cell_kanan['Damaged'] and not cell_kanan['Missed']:
+            valid_cell = cell_kanan['X'], cell_kanan['Y']
+        else:
+
+
+
+
+
+
+
+    with open(os.path.join("../..",data_file), 'w') as f_in:
+        f_in.write('{},{},{}'.format(cell['X'],cell['Y'],last_state))
+    
+    output_shot(*target)
+    return
+
 
 
 def output_shot(x, y):
