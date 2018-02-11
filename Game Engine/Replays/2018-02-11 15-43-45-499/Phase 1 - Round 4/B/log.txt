@@ -1,0 +1,13 @@
+
+11-02-2018 15.43.48.394 - I: 	Player Command DoNothingCommand failed because There was a problem during the placement of player's molBOT ships (DoNothing), the round will be played over
+11-02-2018 15.43.48.401 - I: 	The first round has failed due to a bot's ships not all being placed
+11-02-2018 15.43.48.664 - D: 	Executing bot with following commands python.exe "bot.py" B "C:\Users\User\Documents\Coding\tubes1Stima\Game Engine\Replays\2018-02-11 15-43-45-499\Phase 1 - Round 4\B"
+11-02-2018 15.43.48.664 - I: 	Executing process python.exe "bot.py" B "C:\Users\User\Documents\Coding\tubes1Stima\Game Engine\Replays\2018-02-11 15-43-45-499\Phase 1 - Round 4\B"
+11-02-2018 15.43.48.713 - I: 	Bot has 4000ms to run before it will be forcefully killed
+11-02-2018 15.43.48.812 - E: 	Output from bot:   File "bot.py", line 52
+11-02-2018 15.43.48.812 - E: 	Output from bot:     x,y = line[:-1].split(',')
+11-02-2018 15.43.48.812 - E: 	Output from bot:     ^
+11-02-2018 15.43.48.812 - E: 	Output from bot: IndentationError: expected an indented block
+11-02-2018 15.43.48.815 - E: 	Output from bot: 
+11-02-2018 15.43.48.815 - I: 	Output from bot: 
+11-02-2018 15.43.48.816 - I: 	Your bots total execution time was 00:00:00.1528568

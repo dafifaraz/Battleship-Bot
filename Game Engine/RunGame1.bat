@@ -1,1 +1,1 @@
-Battleships.exe  -b "..\Reference Bots\StimaBot" "..\Reference Bots\EnemyBot" --clog --pretty
+Battleships.exe  -b "..\Reference Bots\upiBOT" "..\Reference Bots\molBOT" --clog

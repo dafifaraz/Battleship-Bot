@@ -1,0 +1,48 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Game Version : 1.0.0
+Game Level : 1
+Round Number : 75
+Map Dimensions : 10 x 10
+Phase : 2
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+########## Player
+~~~~BbBb~~
+~~~~~~~~~~
+~Rrr~~~~~~
+~~~CcCcc~~
+~~~~~~~~~s
+~~~~~~~~~s
+~~~~~~~~~s
+~~~~~~~~~~
+~~dd~~~~~~
+~~~~~~~~~~
+########## Opponent
+~!!!~!~!~!
+!***!~!~!~
+~!!!~!~!~!
+!~!~!~!~!~
+~!~!!!~!~!
+!!!!*!!*!~
+!*~!*!!*!!
+!*!!*!!!!~
+!*!*****!!
+!*!~!~!!!~
+##########
+
+---------------------------
+Player Name: mldBOT
+Available Energy: 151
+Shots: 74
+Hit: 17
+Points: 420
+Arsenal: [SingleShot,DiagonalCrossShot,CornerShot,CrossShot]
+Ships: [Battle Ship,Carrier,Cruiser]
+Status: Alive
+Shield: (Status: Deactivated, Charges: 10), Center Point: No Shield
+---------------------------
+Opponent: vsBOT
+Points: 180
+Ships: []
+Status: Dead
+---------------------------

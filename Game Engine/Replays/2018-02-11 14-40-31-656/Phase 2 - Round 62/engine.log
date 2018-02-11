@@ -1,0 +1,7 @@
+
+11-02-2018 14.41.14.385 - I: 	Added Command FireSingleShotCommand for Player mldBOT
+11-02-2018 14.41.14.605 - I: 	Added Command FireSingleShotCommand for Player vsBOT
+11-02-2018 14.41.14.605 - D: 	Beginning round processing
+11-02-2018 14.41.14.606 - D: 	Processing Player Commands
+11-02-2018 14.41.14.606 - D: 	Killing off players who have no ships left
+11-02-2018 14.41.14.606 - D: 	Round processing complete
