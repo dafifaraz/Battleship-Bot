@@ -1,0 +1,61 @@
+Destroyer 0 1 north										
+Cruiser 2 4 north										
+Battleship 3 2 east										
+Submarine 4 8 east										
+Carrier 5 1 east										
+#
+Destroyer 5 7 north										
+Cruiser 1 8 east										
+Battleship 6 3 north										
+Submarine 9 6 north										
+Carrier 1 0 east										
+#
+Destroyer 3 6 east										
+Cruiser 2 9 east										
+Battleship 4 7 east										
+Submarine 4 2 north										
+Carrier 8 1 north										
+#
+Destroyer 6 3 north										
+Cruiser 5 0 east										
+Battleship 1 5 north										
+Submarine 9 6 north										
+Carrier 3 8 east										
+#
+Destroyer 9 7 north										
+Cruiser 4 6 north										
+Battleship 1 9 east										
+Submarine 1 3 east										
+Carrier 3 2 east										
+#
+Destroyer 2 1 east										
+Cruiser 1 7 east										
+Battleship 4 9 east										
+Submarine 9 3 north										
+Carrier 3 6 east										
+#
+Destroyer 3 9 east										
+Cruiser 7 2 north										
+Battleship 8 4 north										
+Submarine 2 1 east										
+Carrier 0 3 north										
+#
+Destroyer 9 6 north										
+Cruiser 2 0 north										
+Battleship 6 1 north										
+Submarine 2 8 east										
+Carrier 1 2 north										
+#
+Destroyer 2 8 north										
+Cruiser 3 4 east										
+Battleship 1 2 north										
+Submarine 8 7 north										
+Carrier 4 1 east										
+#
+Destroyer 6 3 north										
+Cruiser 4 7 east										
+Battleship 8 2 north										
+Submarine 2 8 east										
+Carrier 2 1 east										
+#
+END
