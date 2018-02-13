@@ -1,1 +1,1 @@
-0,3,hunt
+7,6,target

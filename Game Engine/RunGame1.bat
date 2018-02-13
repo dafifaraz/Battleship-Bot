@@ -1,1 +1,1 @@
-Battleships.exe  -b "..\Reference Bots\upiBOT" "..\Reference Bots\molBOT" --clog
+Battleships.exe  -b "..\Reference Bots\upiBOT" "..\Reference Bots\botBaru" --clog

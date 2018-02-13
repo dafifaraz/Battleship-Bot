@@ -14,10 +14,6 @@ stack_file = "stack.txt"
 
 def main(player_key):
     #create initial external file
-    with open(os.path.join("../..", data_file), 'w') as f:
-        f.write('{},{},{}'.format(0,0,"hunt"))
-    with open(os.path.join("../..", stack_file), 'w') as f:
-        f.write("")
     global map_size
     # Retrieve current game state
     with open(os.path.join(output_path, game_state_file), 'r') as f_in:
@@ -37,48 +33,97 @@ def fire_shot(opponent_map):
         last_cell_x, last_cell_y, last_state = f.read().split(',')
         last_cell_x = int(last_cell_x)
         last_cell_y = int(last_cell_y)
+        print ("data file", last_cell_x, last_cell_y, last_state)
 
     #get last cell
-    last_cell = 0
     for cell in opponent_map:
         if cell['X']==last_cell_x and cell['Y']==last_cell_y:
             last_cell = cell
             break
-
+    if last_cell['Damaged']:
+        print("damaged")
+    else:
+        print("missed")
     #load stack
     stack = []
     with open(os.path.join("../..", stack_file), 'r') as f:
+        print("isi stack")
         for line in f:
             x,y = line[:-1].split(',')
             x = int(x)
             y = int(y)
             stack.append((x,y))
+            print(x,y)
 
+    print("current mode :", last_state)
     #handling if last state hit
     if last_state=="hunt" and last_cell['Damaged']:
-        last_state="target"
         for cell in opponent_map:
             if not cell['Damaged'] and not cell['Missed']:
                 if cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
+                        last_state="target"
                 if cell['X']==last_cell_x-1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
+                        last_state="target"
                 if cell['X']==last_cell_x and cell['Y']==last_cell_y+1:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
+                        last_state="target"
                 if cell['X']==last_cell_x and cell['Y']==last_cell_y-1:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y'])) 
+                        last_state="target"                
     if last_state=="target" and not last_cell['Damaged']:
         for cell in opponent_map:
             if not cell['Damaged'] and not cell['Missed']:
                 if cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
                 if cell['X']==last_cell_x-1 and cell['Y']==last_cell_y:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
                 if cell['X']==last_cell_x and cell['Y']==last_cell_y+1:
-                    stack.append((cell['X'],cell['Y']))
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
                 if cell['X']==last_cell_x and cell['Y']==last_cell_y-1:
-                    stack.append((cell['X'],cell['Y']))
-    
+                    check = True
+                    for s in stack:
+                        if s[0]==cell['X'] and s[1]==cell['Y']:
+                            check = False
+                    if check:
+                        stack.append((cell['X'],cell['Y']))
+
     if stack==[]:
         last_state = "hunt"
 
@@ -86,7 +131,7 @@ def fire_shot(opponent_map):
     if last_state=="hunt":
         targets = []
         for cell in opponent_map:
-            if not cell['Damaged'] and not cell['Missed']:
+            if not cell['Damaged'] and not cell['Missed'] and ((cell['X']+cell['Y'])%2==1):
                     valid_cell = cell['X'], cell['Y']
                     targets.append(valid_cell)
         target = choice(targets)
@@ -95,16 +140,18 @@ def fire_shot(opponent_map):
         output_shot(*target)
     #target mode
     elif last_state=="target":
+        #print("target")
         target = stack[0]
         stack = stack[1:]
         with open(os.path.join("../..",data_file), 'w') as f:
             f.write("{},{},{}".format(target[0],target[1],"target"))
         output_shot(*target)    
-
+    
     #rewrite stack
     with open(os.path.join("../..",stack_file), 'w') as f:
         for s in stack:
             f.write("{},{}".format(s[0],s[1]))
+            f.write("\n")
 
 
 def output_shot(x, y):
@@ -125,11 +172,15 @@ def place_ships():
              'Destroyer 7 3 north',
              'Submarine 1 8 East'
              ]
-
+    with open(os.path.join("../..", data_file), 'w') as f_out:
+            f_out.write("0,0,hunt");
+    with open(os.path.join("../..", stack_file), 'w') as f_out:
+            f_out.write("")
     with open(os.path.join(output_path, place_ship_file), 'w') as f_out:
         for ship in ships:
             f_out.write(ship)
             f_out.write('\n')
+    
     return
 
 
