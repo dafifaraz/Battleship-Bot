@@ -1,8 +1,0 @@
-
-11-02-2018 15.00.25.213 - I: 	The first round has failed due to a bot's ships not all being placed
-11-02-2018 15.00.25.250 - D: 	Executing bot with following commands python.exe "bot.py" A "C:\Users\User\Documents\Coding\tubes1Stima\Game Engine\Replays\2018-02-11 15-00-22-699\Phase 1 - Round 5\A"
-11-02-2018 15.00.25.250 - I: 	Executing process python.exe "bot.py" A "C:\Users\User\Documents\Coding\tubes1Stima\Game Engine\Replays\2018-02-11 15-00-22-699\Phase 1 - Round 5\A"
-11-02-2018 15.00.25.286 - I: 	Bot has 4000ms to run before it will be forcefully killed
-11-02-2018 15.00.25.433 - E: 	Output from bot: 
-11-02-2018 15.00.25.434 - I: 	Output from bot: 
-11-02-2018 15.00.25.436 - I: 	Your bots total execution time was 00:00:00.1858780

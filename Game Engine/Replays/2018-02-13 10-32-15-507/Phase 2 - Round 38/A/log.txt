@@ -1,0 +1,34 @@
+
+13-02-2018 10:32:24:825 - D: 	Executing bot with following commands python.exe "bot.py" A "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-32-15-507\Phase 2 - Round 38\A"
+13-02-2018 10:32:24:825 - I: 	Executing process python.exe "bot.py" A "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-32-15-507\Phase 2 - Round 38\A"
+13-02-2018 10:32:24:825 - I: 	Bot has 4000ms to run before it will be forcefully killed
+13-02-2018 10:32:24:894 - I: 	Output from bot: data file 4 0 target
+13-02-2018 10:32:24:894 - I: 	Output from bot: missed
+13-02-2018 10:32:24:894 - I: 	Output from bot: isi stack
+13-02-2018 10:32:24:894 - I: 	Output from bot: 4 2
+13-02-2018 10:32:24:894 - I: 	Output from bot: 5 1
+13-02-2018 10:32:24:894 - I: 	Output from bot: 6 0
+13-02-2018 10:32:24:894 - I: 	Output from bot: 5 3
+13-02-2018 10:32:24:894 - I: 	Output from bot: 6 2
+13-02-2018 10:32:24:894 - I: 	Output from bot: 5 5
+13-02-2018 10:32:24:894 - I: 	Output from bot: 6 4
+13-02-2018 10:32:24:894 - I: 	Output from bot: 7 3
+13-02-2018 10:32:24:894 - I: 	Output from bot: 3 7
+13-02-2018 10:32:24:894 - I: 	Output from bot: 4 6
+13-02-2018 10:32:24:894 - I: 	Output from bot: 5 9
+13-02-2018 10:32:24:894 - I: 	Output from bot: 6 8
+13-02-2018 10:32:24:894 - I: 	Output from bot: 7 9
+13-02-2018 10:32:24:894 - I: 	Output from bot: 7 7
+13-02-2018 10:32:24:894 - I: 	Output from bot: 8 8
+13-02-2018 10:32:24:894 - I: 	Output from bot: 9 9
+13-02-2018 10:32:24:894 - I: 	Output from bot: 8 6
+13-02-2018 10:32:24:894 - I: 	Output from bot: 9 7
+13-02-2018 10:32:24:894 - I: 	Output from bot: 0 1
+13-02-2018 10:32:24:894 - I: 	Output from bot: 1 0
+13-02-2018 10:32:24:894 - I: 	Output from bot: 0 5
+13-02-2018 10:32:24:894 - I: 	Output from bot: 1 6
+13-02-2018 10:32:24:894 - I: 	Output from bot: 2 7
+13-02-2018 10:32:24:894 - I: 	Output from bot: current mode : target
+13-02-2018 10:32:24:910 - E: 	Output from bot: 
+13-02-2018 10:32:24:910 - I: 	Output from bot: 
+13-02-2018 10:32:24:910 - I: 	Your bots total execution time was 00:00:00.0813412

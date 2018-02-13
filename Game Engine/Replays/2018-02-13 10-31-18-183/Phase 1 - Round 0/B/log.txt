@@ -1,0 +1,17 @@
+
+13-02-2018 10:31:18:675 - I: 	Executing process python.exe "" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-31-18-183\Phase 1 - Round 0\B"
+13-02-2018 10:31:18:744 - I: 	Bot calibration complete and can run an additional 61ms due to environment startup
+13-02-2018 10:31:18:744 - D: 	Executing bot with following commands python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-31-18-183\Phase 1 - Round 0\B"
+13-02-2018 10:31:18:744 - I: 	Executing process python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-31-18-183\Phase 1 - Round 0\B"
+13-02-2018 10:31:18:744 - I: 	Bot has 4000ms to run before it will be forcefully killed
+13-02-2018 10:31:18:813 - E: 	Output from bot: Traceback (most recent call last):
+13-02-2018 10:31:18:813 - E: 	Output from bot:   File "bot.py", line 71, in <module>
+13-02-2018 10:31:18:813 - E: 	Output from bot:     main(args.PlayerKey)
+13-02-2018 10:31:18:813 - E: 	Output from bot:   File "bot.py", line 20, in main
+13-02-2018 10:31:18:813 - E: 	Output from bot:     place_ships()
+13-02-2018 10:31:18:813 - E: 	Output from bot:   File "bot.py", line 55, in place_ships
+13-02-2018 10:31:18:813 - E: 	Output from bot:     ships = random.choice([a,b,c,d,e,f,g,h,i,j])
+13-02-2018 10:31:18:813 - E: 	Output from bot: NameError: name 'random' is not defined
+13-02-2018 10:31:18:813 - E: 	Output from bot: 
+13-02-2018 10:31:18:813 - I: 	Output from bot: 
+13-02-2018 10:31:18:829 - I: 	Your bots total execution time was 00:00:00.0786892

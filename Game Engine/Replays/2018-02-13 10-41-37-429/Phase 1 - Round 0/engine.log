@@ -1,0 +1,12 @@
+
+13-02-2018 10:41:37:544 - I: 	Loaded bot ..\Reference Bots\upiBOT
+13-02-2018 10:41:37:544 - I: 	Loaded bot ..\Reference Bots\EnemyBot
+13-02-2018 10:41:37:544 - I: 	Registered player upiBOT
+13-02-2018 10:41:37:544 - I: 	Registered player vsBOT
+13-02-2018 10:41:37:575 - I: 		OK!
+13-02-2018 10:41:37:899 - I: 	Added Command PlaceShipCommand for Player upiBOT
+13-02-2018 10:41:38:047 - I: 	Added Command PlaceShipCommand for Player vsBOT
+13-02-2018 10:41:38:047 - D: 	Beginning round processing
+13-02-2018 10:41:38:047 - D: 	Processing Player Commands
+13-02-2018 10:41:38:047 - D: 	Killing off players who have no ships left
+13-02-2018 10:41:38:062 - D: 	Round processing complete

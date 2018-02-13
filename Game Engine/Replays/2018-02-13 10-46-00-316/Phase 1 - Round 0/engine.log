@@ -1,0 +1,12 @@
+
+13-02-2018 10:46:00:432 - I: 	Loaded bot ..\Reference Bots\dafiBOT
+13-02-2018 10:46:00:454 - I: 	Loaded bot ..\Reference Bots\EnemyBot
+13-02-2018 10:46:00:454 - I: 	Registered player dafiBOT
+13-02-2018 10:46:00:454 - I: 	Registered player vsBOT
+13-02-2018 10:46:00:469 - I: 		OK!
+13-02-2018 10:46:00:754 - I: 	Added Command DoNothingCommand for Player dafiBOT
+13-02-2018 10:46:00:901 - I: 	Added Command PlaceShipCommand for Player vsBOT
+13-02-2018 10:46:00:901 - D: 	Beginning round processing
+13-02-2018 10:46:00:917 - D: 	Processing Player Commands
+13-02-2018 10:46:00:917 - E: 	Failed to process command DoNothingCommand for player dafiBOTGameEngine.Exceptions.InvalidCommandException: There was a problem during the placement of player's dafiBOT ships (DoNothing), the round will be played over
+   at GameEngine.Engine.GameRoundProcessor.ProcessPlayerCommands() in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Engine\GameRoundProcessor.cs:line 215

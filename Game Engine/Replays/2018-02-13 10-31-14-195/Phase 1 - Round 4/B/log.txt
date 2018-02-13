@@ -1,0 +1,17 @@
+
+13-02-2018 10:31:15:582 - I: 	Player Command DoNothingCommand failed because There was a problem during the placement of player's mldBOT ships (DoNothing), the round will be played over
+13-02-2018 10:31:15:582 - I: 	The first round has failed due to a bot's ships not all being placed
+13-02-2018 10:31:15:729 - D: 	Executing bot with following commands python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-31-14-195\Phase 1 - Round 4\B"
+13-02-2018 10:31:15:729 - I: 	Executing process python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-31-14-195\Phase 1 - Round 4\B"
+13-02-2018 10:31:15:729 - I: 	Bot has 4000ms to run before it will be forcefully killed
+13-02-2018 10:31:15:782 - E: 	Output from bot: Traceback (most recent call last):
+13-02-2018 10:31:15:782 - E: 	Output from bot:   File "bot.py", line 71, in <module>
+13-02-2018 10:31:15:782 - E: 	Output from bot:     main(args.PlayerKey)
+13-02-2018 10:31:15:782 - E: 	Output from bot:   File "bot.py", line 20, in main
+13-02-2018 10:31:15:782 - E: 	Output from bot:     place_ships()
+13-02-2018 10:31:15:782 - E: 	Output from bot:   File "bot.py", line 55, in place_ships
+13-02-2018 10:31:15:782 - E: 	Output from bot:     ships = random.choice([a,b,c,d,e,f,g,h,i,j])
+13-02-2018 10:31:15:782 - E: 	Output from bot: NameError: name 'random' is not defined
+13-02-2018 10:31:15:798 - E: 	Output from bot: 
+13-02-2018 10:31:15:798 - I: 	Output from bot: 
+13-02-2018 10:31:15:798 - I: 	Your bots total execution time was 00:00:00.0693669

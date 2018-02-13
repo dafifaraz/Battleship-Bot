@@ -1,7 +1,0 @@
-
-11-02-2018 15.01.48.994 - I: 	Added Command FireSingleShotCommand for Player upiBOT
-11-02-2018 15.01.49.199 - I: 	Added Command FireSingleShotCommand for Player vsBOT
-11-02-2018 15.01.49.200 - D: 	Beginning round processing
-11-02-2018 15.01.49.200 - D: 	Processing Player Commands
-11-02-2018 15.01.49.200 - D: 	Killing off players who have no ships left
-11-02-2018 15.01.49.200 - D: 	Round processing complete

@@ -1,0 +1,48 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Game Version : 1.0.0
+Game Level : 1
+Round Number : 36
+Map Dimensions : 10 x 10
+Phase : 2
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+########## Player
+~~~~~~~~~~
+~~~~SSS~~~
+~~~~~~~~~~
+~~R~~~~~~~
+~~r~~~~~~~
+~~r~~~~~~~
+~~~~~~~~~~
+d~~bbbB~~~
+d~~~~cCCCC
+~~~~~~~~~~
+########## Opponent
+~!!!~!~~~~
+!~*~~~~~~~
+~~~!~~~~~~
+~~!~~~~~!~
+~~~~~~~~~~
+~!~~~~~~~~
+!*!~~~~~~!
+!*!!~!~!!~
+!*!*****!~
+~*~!~!!!~~
+##########
+
+---------------------------
+Player Name: upiBOT
+Available Energy: 73
+Shots: 35
+Hit: 10
+Points: 160
+Arsenal: [SingleShot,SeekerMissile,DiagonalCrossShot,CornerShot,CrossShot]
+Ships: [Submarine,Battle Ship,Carrier,Cruiser]
+Status: Alive
+Shield: (Status: Deactivated, Charges: 5), Center Point: No Shield
+---------------------------
+Opponent: cisituBOT
+Points: 110
+Ships: [Submarine,Destroyer,Cruiser]
+Status: Alive
+---------------------------

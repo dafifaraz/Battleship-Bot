@@ -1,0 +1,11 @@
+
+13-02-2018 09:49:53:938 - D: 	Executing bot with following commands python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 09-49-52-443\Phase 2 - Round 2\B"
+13-02-2018 09:49:53:938 - I: 	Executing process python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 09-49-52-443\Phase 2 - Round 2\B"
+13-02-2018 09:49:53:940 - I: 	Bot has 4000ms to run before it will be forcefully killed
+13-02-2018 09:49:54:069 - I: 	Output from bot: data file 7 2 hunt
+13-02-2018 09:49:54:069 - I: 	Output from bot: damaged
+13-02-2018 09:49:54:069 - I: 	Output from bot: isi stack
+13-02-2018 09:49:54:069 - I: 	Output from bot: current mode : hunt
+13-02-2018 09:49:54:078 - E: 	Output from bot: 
+13-02-2018 09:49:54:078 - I: 	Output from bot: 
+13-02-2018 09:49:54:079 - I: 	Your bots total execution time was 00:00:00.1409738

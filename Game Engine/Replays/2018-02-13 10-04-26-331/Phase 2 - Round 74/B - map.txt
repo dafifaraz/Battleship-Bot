@@ -1,0 +1,48 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Game Version : 1.0.0
+Game Level : 1
+Round Number : 74
+Map Dimensions : 10 x 10
+Phase : 2
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+########## Player
+~~~~~~~~~~
+~~~~sss~~~
+~~~~~~~~~~
+~~r~~~~~~~
+~~r~~~~~~~
+~~r~~~~~~~
+~~~~~~~~~~
+d~~bbbb~~~
+d~~~~ccccc
+~~~~~~~~~~
+########## Opponent
+!!!!!!!~~~
+!*!*****~~
+!*!!!!!!!~
+!*!!!!!!!*
+!*!~!!!!!!
+!!~~~!*!!!
+!!~~~~*!!!
+!~~~~!!!!!
+~~~~!!!!!!
+~~~~~***!!
+##########
+
+---------------------------
+Player Name: cisituBOT
+Available Energy: 149
+Shots: 73
+Hit: 15
+Points: 270
+Arsenal: []
+Ships: []
+Status: Dead
+Shield: (Status: Deactivated, Charges: 10), Center Point: No Shield
+---------------------------
+Opponent: upiBOT
+Points: 420
+Ships: [Submarine]
+Status: Alive
+---------------------------

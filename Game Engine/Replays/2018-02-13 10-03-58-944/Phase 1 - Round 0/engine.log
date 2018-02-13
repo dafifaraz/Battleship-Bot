@@ -1,0 +1,12 @@
+
+13-02-2018 10:03:59:060 - I: 	Loaded bot ..\Reference Bots\upiBOT
+13-02-2018 10:03:59:060 - I: 	Loaded bot ..\Reference Bots\botBaru
+13-02-2018 10:03:59:060 - I: 	Registered player upiBOT
+13-02-2018 10:03:59:060 - I: 	Registered player cisituBOT
+13-02-2018 10:03:59:091 - I: 		OK!
+13-02-2018 10:03:59:376 - I: 	Added Command PlaceShipCommand for Player upiBOT
+13-02-2018 10:03:59:507 - I: 	Added Command DoNothingCommand for Player cisituBOT
+13-02-2018 10:03:59:524 - D: 	Beginning round processing
+13-02-2018 10:03:59:528 - D: 	Processing Player Commands
+13-02-2018 10:03:59:528 - E: 	Failed to process command DoNothingCommand for player cisituBOTGameEngine.Exceptions.InvalidCommandException: There was a problem during the placement of player's cisituBOT ships (DoNothing), the round will be played over
+   at GameEngine.Engine.GameRoundProcessor.ProcessPlayerCommands() in C:\Development\Entelect Challenge\2017-Battleships\GameEngine\Battleships\GameEngine\Engine\GameRoundProcessor.cs:line 215

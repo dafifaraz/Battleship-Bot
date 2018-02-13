@@ -54,20 +54,21 @@ def fire_shot(opponent_map):
     def aroundHit(cells) :
         return searchCellSameCoor(cells['X']+1,cells['Y'])['Damaged'] or searchCellSameCoor(cells['X'],cells['Y']+1)['Damaged'] or searchCellSameCoor(cells['X']-1,cells['Y'])['Damaged'] or searchCellSameCoor(cells['X'],cells['Y']-1)['Damaged']
     targets = []
-    for cell in opponent_map:
-        if (not (cell['Damaged'])) and (not (cell['Missed'])) and ((cell['X']+cell['Y']) % 2 == 0):
+    for cell in opponent_map :
+        if (aroundHit2(cell) >= 2 ) and (not (cell['Damaged'])) and (not (cell['Missed'])) and ((cell['X']+cell['Y']) % 2 != 0) :
             valid_cell = cell['X'], cell['Y']
             targets.append(valid_cell)
-    if not targets :
-        for cell in opponent_map :
-            if (aroundHit2(cell) >= 2 ) and (not (cell['Damaged'])) and (not (cell['Missed'])) :
-                valid_cell = cell['X'], cell['Y']
-                targets.append(valid_cell)
     if not targets :
         for cell in opponent_map :
             if (aroundHit(cell)) and (not (cell['Damaged'])) and (not (cell['Missed'])) and ((cell['X']+cell['Y']) % 2 != 0) :
                 valid_cell = cell['X'], cell['Y']
                 targets.append(valid_cell)
+    if not targets :
+        for cell in opponent_map:
+            if (not (cell['Damaged'])) and (not (cell['Missed'])) and ((cell['X']+cell['Y']) % 2 == 0):
+                valid_cell = cell['X'], cell['Y']
+                targets.append(valid_cell)
+                
     target = choice(targets)
     output_shot(*target)
     return

@@ -39,6 +39,17 @@ def fire_shot(opponent_map):
             if (cells['X'] == absis) and (cells['Y']==ordinat) :
                 break
         return cells
+    def aroundHit2(cells) :
+        i = 0
+        if(searchCellSameCoor(cells['X']+1,cells['Y'])['Damaged']) :
+            i+=1
+        if(searchCellSameCoor(cells['X'],cells['Y']+1)['Damaged']) :
+            i+=1            
+        if(searchCellSameCoor(cells['X']-1,cells['Y'])['Damaged']) :
+            i+=1        
+        if(searchCellSameCoor(cells['X'],cells['Y']-1)['Damaged']) :            
+            i+=1
+        return i
 
     def aroundHit(cells) :
         return searchCellSameCoor(cells['X']+1,cells['Y'])['Damaged'] or searchCellSameCoor(cells['X'],cells['Y']+1)['Damaged'] or searchCellSameCoor(cells['X']-1,cells['Y'])['Damaged'] or searchCellSameCoor(cells['X'],cells['Y']-1)['Damaged']
@@ -50,6 +61,11 @@ def fire_shot(opponent_map):
     if not targets :
         for cell in opponent_map :
             if (aroundHit(cell)) and (not (cell['Damaged'])) and (not (cell['Missed'])) and ((cell['X']+cell['Y']) % 2 != 0) :
+                valid_cell = cell['X'], cell['Y']
+                targets.append(valid_cell)
+    if not targets :
+        for cell in opponent_map :
+            if (aroundHit2(cell) >= 2 ) and (not (cell['Damaged'])) and (not (cell['Missed'])) and ((cell['X']+cell['Y']) % 2 != 0) :
                 valid_cell = cell['X'], cell['Y']
                 targets.append(valid_cell)
     

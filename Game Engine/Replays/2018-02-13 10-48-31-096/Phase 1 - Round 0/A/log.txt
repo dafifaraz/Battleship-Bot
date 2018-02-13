@@ -1,0 +1,9 @@
+
+13-02-2018 10:48:31:396 - I: 	Executing process python.exe "" A "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-48-31-096\Phase 1 - Round 0\A"
+13-02-2018 10:48:31:459 - I: 	Bot calibration complete and can run an additional 62ms due to environment startup
+13-02-2018 10:48:31:459 - D: 	Executing bot with following commands python.exe "bot.py" A "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-48-31-096\Phase 1 - Round 0\A"
+13-02-2018 10:48:31:459 - I: 	Executing process python.exe "bot.py" A "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-48-31-096\Phase 1 - Round 0\A"
+13-02-2018 10:48:31:475 - I: 	Bot has 4000ms to run before it will be forcefully killed
+13-02-2018 10:48:31:544 - I: 	Output from bot: 
+13-02-2018 10:48:31:544 - E: 	Output from bot: 
+13-02-2018 10:48:31:544 - I: 	Your bots total execution time was 00:00:00.0749230

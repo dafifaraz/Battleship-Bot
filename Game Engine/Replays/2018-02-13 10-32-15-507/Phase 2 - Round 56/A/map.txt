@@ -1,0 +1,48 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Game Version : 1.0.0
+Game Level : 1
+Round Number : 56
+Map Dimensions : 10 x 10
+Phase : 2
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+########## Player
+~~~~~~~~~~
+~b~ccCCc~s
+~b~~~~~~~S
+~b~~~~~~~s
+~b~~~~~~~~
+~~~~~~D~~~
+~~~~~~d~~~
+~~~~~~~~~~
+~~~~~~~~~~
+~~~~~rrr~~
+########## Opponent
+~~~~~!!!!!
+~~~~~~!!!!
+~~~!~~~!!!
+~~!!!~~~!~
+~!!!!!~~~~
+!!!!*!!~~~
+!*!!*!!*~~
+!*!!*!!~~~
+~*!***~~~~
+!~!!!!!~~~
+##########
+
+---------------------------
+Player Name: cisituBOT
+Available Energy: 113
+Shots: 55
+Hit: 10
+Points: 130
+Arsenal: [SingleShot,SeekerMissile,DoubleShot,CornerShot]
+Ships: [Submarine,Destroyer,Carrier]
+Status: Alive
+Shield: (Status: Deactivated, Charges: 7), Center Point: No Shield
+---------------------------
+Opponent: vsBOT
+Points: 190
+Ships: [Submarine,Destroyer,Battle Ship,Carrier]
+Status: Alive
+---------------------------

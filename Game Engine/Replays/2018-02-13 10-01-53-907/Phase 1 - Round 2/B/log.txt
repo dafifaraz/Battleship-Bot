@@ -1,0 +1,19 @@
+
+13-02-2018 10:01:54:762 - I: 	Player Command DoNothingCommand failed because There was a problem during the placement of player's cisituBOT ships (DoNothing), the round will be played over
+13-02-2018 10:01:54:767 - I: 	The first round has failed due to a bot's ships not all being placed
+13-02-2018 10:01:54:876 - D: 	Executing bot with following commands python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-01-53-907\Phase 1 - Round 2\B"
+13-02-2018 10:01:54:876 - I: 	Executing process python.exe "bot.py" B "C:\Users\Dafi Faraz\Documents\GitHub\tubes1Stima\Game Engine\Replays\2018-02-13 10-01-53-907\Phase 1 - Round 2\B"
+13-02-2018 10:01:54:876 - I: 	Bot has 4000ms to run before it will be forcefully killed
+13-02-2018 10:01:54:939 - E: 	Output from bot: Traceback (most recent call last):
+13-02-2018 10:01:54:939 - E: 	Output from bot:   File "bot.py", line 204, in <module>
+13-02-2018 10:01:54:939 - E: 	Output from bot:     main(args.PlayerKey)
+13-02-2018 10:01:54:939 - E: 	Output from bot:   File "bot.py", line 23, in main
+13-02-2018 10:01:54:939 - E: 	Output from bot:     place_ships()
+13-02-2018 10:01:54:939 - E: 	Output from bot:   File "bot.py", line 182, in place_ships
+13-02-2018 10:01:54:939 - E: 	Output from bot:     list_ships = loadPlacingMap()
+13-02-2018 10:01:54:939 - E: 	Output from bot:   File "bot.py", line 165, in loadPlacingMap
+13-02-2018 10:01:54:939 - E: 	Output from bot:     file = open("Place.txt","r")
+13-02-2018 10:01:54:939 - E: 	Output from bot: FileNotFoundError: [Errno 2] No such file or directory: 'Place.txt'
+13-02-2018 10:01:54:939 - I: 	Output from bot: 
+13-02-2018 10:01:54:939 - E: 	Output from bot: 
+13-02-2018 10:01:54:939 - I: 	Your bots total execution time was 00:00:00.0679897
