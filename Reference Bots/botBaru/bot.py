@@ -57,7 +57,9 @@ def fire_shot(opponent_map):
 
     print("current mode :", last_state)
     #handling if last state hit
+    print("last st", last_state, "damaged :", last_cell['Damaged'])
     if last_state=="hunt" and last_cell['Damaged']:
+        print ("adding aronund", last_cell['X'], last_cell['Y'])
         for cell in opponent_map:
             if not cell['Damaged'] and not cell['Missed']:
                 if cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
@@ -66,6 +68,7 @@ def fire_shot(opponent_map):
                         if s[0]==cell['X'] and s[1]==cell['Y']:
                             check = False
                     if check:
+                        print("added", cell['X'], cell['Y'])
                         stack.append((cell['X'],cell['Y']))
                         last_state="target"
                 if cell['X']==last_cell_x-1 and cell['Y']==last_cell_y:
@@ -74,6 +77,7 @@ def fire_shot(opponent_map):
                         if s[0]==cell['X'] and s[1]==cell['Y']:
                             check = False
                     if check:
+                        print("added", cell['X'], cell['Y'])                        
                         stack.append((cell['X'],cell['Y']))
                         last_state="target"
                 if cell['X']==last_cell_x and cell['Y']==last_cell_y+1:
@@ -82,6 +86,7 @@ def fire_shot(opponent_map):
                         if s[0]==cell['X'] and s[1]==cell['Y']:
                             check = False
                     if check:
+                        print("added", cell['X'], cell['Y'])                        
                         stack.append((cell['X'],cell['Y']))
                         last_state="target"
                 if cell['X']==last_cell_x and cell['Y']==last_cell_y-1:
@@ -90,9 +95,11 @@ def fire_shot(opponent_map):
                         if s[0]==cell['X'] and s[1]==cell['Y']:
                             check = False
                     if check:
+                        print("added", cell['X'], cell['Y'])                        
                         stack.append((cell['X'],cell['Y'])) 
                         last_state="target"                
-    if last_state=="target" and not last_cell['Damaged']:
+    elif last_state=="target" and last_cell['Damaged']:
+        print ("adding aronund", last_cell['X'], last_cell['Y'])        
         for cell in opponent_map:
             if not cell['Damaged'] and not cell['Missed']:
                 if cell['X']==last_cell_x+1 and cell['Y']==last_cell_y:
